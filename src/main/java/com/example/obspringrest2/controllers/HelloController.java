@@ -8,6 +8,12 @@ public class HelloController {
 
     @GetMapping(path = "/hola")
     public String hello() {
+
         return "Hola desde la api!";
+    }
+
+    @GetMapping(path = "/branch1")
+    public String branch1() {
+        return "Hola desde la branch1";
     }
 }
